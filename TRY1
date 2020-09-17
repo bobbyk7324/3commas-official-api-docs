@@ -1,0 +1,13 @@
+{
+  getMetric(metric: "age_destroyed") {
+    timeseriesData(
+      slug: "santiment"
+      from: "2020-01-01T00:00:00Z"
+      to: "2020-01-07T00:00:00Z"
+      interval: "1d"
+    ) {
+      datetime
+      value
+    }
+  }
+}
